@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trick Templates</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/681d0e5540.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">TrickTemplates</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Templates</a></li>
+        <li><a href="#">Special Requests</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+      <div class="title">Trick Templates <i class="fa-duotone fa-wand-magic-sparkles"></i></div>
+      <p>The Main Purpose To Make This Webiste Was To Educate People And Espeacially Tenagers Who Are Wasting Their Time Using Social Apps I Made This To Motivate Them That How Cool Simple Programming/Coding Can Be.   </p>
+ <p>
+ 
+ </p>
+      
+    </div>
+  </div>
+<img style="  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;"  src="/templates/Screenshot 2023-01-02 085245.png" width="90%" alt="">
+  <h1 class="template-headline" style="color:rgb(7, 1, 1);">Netflix Login Form</h1>
+  <p class="template-headlinem">   -With Ability To Get Responses- </p>
+  <a href="https://github.com/coder2708/TrickTemplates/tree/main/netflix"> <img style="  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 2.5%;" src="/download-solid.svg" width="1.5%" alt=""></a> 
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>
